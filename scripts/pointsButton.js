@@ -2,9 +2,11 @@ import { renderPoints } from "./renderPoints.js";
 
 let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
 
-const banana = document.querySelector('.banana');
+const banana = document.getElementById('banana');
 banana.addEventListener(touchEvent, (event) => renderPoints('banana'));
-const gold = document.querySelector('.gold');
+
+const gold = document.getElementById('gold');
 gold.addEventListener(touchEvent, (event) => renderPoints('gold'));
-const blue = document.querySelector('.blue');
+
+const blue = document.getElementById('blue');
 blue.addEventListener(touchEvent, (event) => renderPoints('blue'));
