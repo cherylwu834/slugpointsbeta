@@ -15,18 +15,18 @@
         <p class = "par3">If you have no clue how many slug points to spend<br>this is the website for you!</p>
         <div>
             <h3>choose your mealplan</h3>
-            <script type="module" src="scripts/renderPoints.js"></script>
-            <input type="button" class="banana" value="banana" onclick="renderPoints('banana')">
-            <input type="button" class="gold" value="gold" onclick="renderPoints('gold')">
-            <input type="button" class="blue" value="blue" onclick="renderPoints('blue')">
+            <script type="module" src="scripts/pointsButton.js"></script>
+            <input type="button" class="banana" value="banana">
+            <input type="button" class="gold" value="gold">
+            <input type="button" class="blue" value="blue">
             <div id="pointsRemaining" class="points"></div>
             <p id="comment" class = "par4"></p>
         </div>
         <div>
             <p class="par3">Enter your balance to see how much you need to spend daily</p>
-            <script type="module" src="scripts/renderRate.js"></script>
+            <script type="module" src="scripts/calcButton.js"></script>
             <input type="number" class="pointRate" max="9999.99" min="0">
-            <input type="button" class="calculate" value="Calculate" onclick="renderRate()">
+            <input type="button" class="calculate" value="Calculate">
             <p id="rate" class="rate"></p>
         </div>
         <h1 class = "footer">Created during Cruzhacks 2023... Inspired by the website howmanyf*ckingswipesshouldihave.com, 
