@@ -1,5 +1,5 @@
 import { getQuarter } from "./getQuarter.js";
-import schedule from "./quarters.json";
+import schedule from "./quarters.json" assert {type: "json"};
 
 export function getDaysRemaining () {
     var {quarter, nextStart} = getQuarter(schedule);
@@ -10,4 +10,4 @@ export function getDaysRemaining () {
     const diffTime = quarterEnd - date;     // in milliseconds
     const diffDays = Math.ceil(diffTime / 86400000);   // conversion from milliseconds to days;
     return {diffDays, nextStart};
-}
+} 

@@ -15,10 +15,10 @@
         <p class = "par3">If you have no clue how many slug points to spend<br>this is the website for you!</p>
         <div>
             <h3>choose your mealplan</h3>
-            <script type="module" src="scripts/pointsButton.js"></script>
-            <input type="button" id="banana" class="banana" value="banana">
-            <input type="button" id="gold" class="gold" value="gold">
-            <input type="button" id="blue" class="blue" value="blue">
+            <script type="module" src="scripts/renderPoints.js"></script>
+            <input type="button" class="banana" value="banana" onclick="renderPoints('banana')">
+            <input type="button" class="gold" value="gold" onclick="renderPoints('gold')">
+            <input type="button" class="blue" value="blue" onclick="renderPoints('blue')">
             <div id="pointsRemaining" class="points"></div>
             <p id="comment" class = "par4"></p>
         </div>

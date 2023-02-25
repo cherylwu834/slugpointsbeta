@@ -1,4 +1,4 @@
-export function getQuarter(schedule) {
+ export function getQuarter(schedule) {
     var date = new Date();
     var quarter;
 

@@ -1,7 +1,7 @@
 import { getPointsRemaining } from "./functions/pointsRemaining.js";
 import { getDaysRemaining } from "./functions/daysRemaining.js";
 
-export function renderPoints(plan) {
+window['renderPoints'] = function renderPoints(plan) {
     let {diffDays, nextStart} = getDaysRemaining();
     if (0 < diffDays) {
         document.getElementById('pointsRemaining').innerHTML = getPointsRemaining(plan);
