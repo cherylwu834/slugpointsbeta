@@ -1,4 +1,4 @@
- export function getQuarter(schedule) {
+ export function getQuarter() {
     let schedule = {
                     "quarters": [
                         {
