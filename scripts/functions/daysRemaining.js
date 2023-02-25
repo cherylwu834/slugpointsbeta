@@ -1,8 +1,7 @@
 import { getQuarter } from "./getQuarter.js";
-import schedule from "./quarters.json" assert {type: "json"};
 
 export function getDaysRemaining () {
-    var {quarter, nextStart} = getQuarter(schedule);
+    var {quarter, nextStart} = getQuarter();
     var quarterEnd = new Date(quarter.endDate);
 
     var date = new Date;
